@@ -1,0 +1,5 @@
+[2025-11-26 23:08:54,547] 14 root -INFO - Starting data ingestion
+[2025-11-26 23:08:59,442] 62 root -INFO - Performed train test split
+[2025-11-26 23:08:59,453] 63 root -INFO - Exited split_data_as_train_test method of Data Ingestion class
+[2025-11-26 23:08:59,453] 66 root -INFO - Created directory for train and test data
+[2025-11-26 23:08:59,570] 69 root -INFO - Saved train and test data
