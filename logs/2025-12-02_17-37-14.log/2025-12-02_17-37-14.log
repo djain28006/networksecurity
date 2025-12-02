@@ -1,0 +1,10 @@
+[2025-12-02 17:37:15,309] 16 root -INFO - Starting data ingestion
+[2025-12-02 17:37:19,543] 62 root -INFO - Performed train test split
+[2025-12-02 17:37:19,543] 63 root -INFO - Exited split_data_as_train_test method of Data Ingestion class
+[2025-12-02 17:37:19,543] 66 root -INFO - Created directory for train and test data
+[2025-12-02 17:37:19,654] 69 root -INFO - Saved train and test data
+[2025-12-02 17:37:19,654] 18 root -INFO - Data ingestion completed
+[2025-12-02 17:37:19,654] 22 root -INFO - Starting data validation
+[2025-12-02 17:37:19,756] 37 root -INFO - Schema columns: ['columns', 'numerical_columns']
+[2025-12-02 17:37:19,758] 38 root -INFO - DataFrame columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+[2025-12-02 17:37:19,758] 92 root -INFO - Train dataset column validation failed.

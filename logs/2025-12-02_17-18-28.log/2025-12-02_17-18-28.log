@@ -1,0 +1,11 @@
+[2025-12-02 17:18:29,405] 16 root -INFO - Starting data ingestion
+[2025-12-02 17:18:33,799] 62 root -INFO - Performed train test split
+[2025-12-02 17:18:33,799] 63 root -INFO - Exited split_data_as_train_test method of Data Ingestion class
+[2025-12-02 17:18:33,799] 66 root -INFO - Created directory for train and test data
+[2025-12-02 17:18:33,894] 69 root -INFO - Saved train and test data
+[2025-12-02 17:18:33,894] 18 root -INFO - Data ingestion completed
+[2025-12-02 17:18:33,912] 22 root -INFO - Starting data validation
+[2025-12-02 17:18:34,028] 32 root -INFO - Required number of columns:2
+[2025-12-02 17:18:34,037] 33 root -INFO - Data frame has columns:31
+[2025-12-02 17:18:34,037] 32 root -INFO - Required number of columns:2
+[2025-12-02 17:18:34,037] 33 root -INFO - Data frame has columns:31
