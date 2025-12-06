@@ -10,14 +10,10 @@ defining the common variables for the training pipeline
 """
 
 TARGET_COLUMN = "Result"
-
 PIPELINE_NAME = "NetworkSecurity"
-
 # Use a single consistent artifact folder name
 ARTIFACT_NAME = "Artifacts"
-
 FILE_NAME = "phisingData.csv"
-
 TRAIN_FILE_NAME = "train.csv"
 TEST_FILE_NAME = "test.csv"
 
@@ -37,6 +33,8 @@ DATA_INGESTION_INGESTED_DIR = "ingested"
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO = 0.20
 
 SCHEMA_FILE_PATH = os.path.join("data_schema","schema.yaml")
+SAVED_MODEL_DIR = os.path.join("saved_models")
+MODEL_FILE_NAME = "model.pkl"
 
 """
 Data Validation related constants start with DATA_VALIDATION VAR NAME
@@ -65,3 +63,11 @@ DATA_TRANSFORMATION_TRAIN_FILE_PATH: str = "train.npy"
 
 DATA_TRANSFORMATION_TEST_FILE_PATH: str = "test.npy"
 
+"""
+MODEL TRAINING related constant start with MODEL_TRAINING VAR NAME
+"""
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
+MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD: float = 0.05
