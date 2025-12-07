@@ -1,24 +1,24 @@
-python-dotenv
+# Core ML + Data
 numpy
 pandas
+scikit-learn
+joblib
+dill
+pyyaml
+
+# Flask Web App
+Flask
+gunicorn
+
+# Mongo (needed because your main_utils loads from DB sometimes)
 pymongo
 certifi
 pymongo[srv]==3.11
-dill
-pyyaml
-fastapi
-uvicorn
 
-# ML and preprocessing
-scikit-learn
-
-# Flask app (for UI)
-Flask
-
-# URL feature extraction dependencies
+# Feature extraction dependencies
 requests
 beautifulsoup4
 python-whois
 
-# Optional but recommended
-joblib
+# Additional utilities used in your project
+python-dotenv
