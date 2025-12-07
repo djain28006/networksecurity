@@ -1,2 +1,41 @@
-venv
-.env
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Artifacts / Model outputs
+Artifacts/
+prediction_output/
+uploads/
+valid_data/
+
+# Logs
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# MLflow
+mlflow.db
+
+# Data
+Network_Data/
+data_schema/
+
+# GitHub
+.github/
+
+# Python cache
+*.egg-info/
+dist/
+build/
+*.egg

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Prediction Results</h1>
+    <a href="{{ url_for('index') }}">← Back to Home</a>
+    <div class="table-container">
+        {{ table | safe }}
+    </div>
+    {% if download %}
+    <a href="{{ url_for('download_file') }}" class="download-btn">Download CSV</a>
+    {% endif %}
+</div>
+</body>
+</html>

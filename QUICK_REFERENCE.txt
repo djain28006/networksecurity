@@ -1,0 +1,83 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    NETWORK SECURITY PROJECT - QUICK REFERENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+📦 ROOT DIRECTORY
+│
+├── 🚀 ENTRY POINTS
+│   ├── main.py                    → Training pipeline entry point
+│   └── app.py                     → Flask web app (predictions)
+│
+├── 📦 MAIN PACKAGE: networksecurity/
+│   │
+│   ├── 🔧 components/             → ML Pipeline Steps
+│   │   ├── data_ingestion.py      → Load & split data
+│   │   ├── data_validation.py     → Validate data quality
+│   │   ├── data_transformation.py → Feature engineering
+│   │   └── model_trainer.py       → Train models
+│   │
+│   ├── 🚀 pipeline/               → Complete Workflows
+│   │   ├── training_pipeline.py   → Full training flow
+│   │   └── batch_prediction.py    → Batch predictions
+│   │
+│   ├── ⚙️ entity/                 → Configuration
+│   │   ├── config_entity.py       → Config classes
+│   │   └── artifact_entity.py     → Artifact classes
+│   │
+│   ├── 🛠️ utils/                  → Helper Functions
+│   │   ├── main_utils/
+│   │   │   └── utils.py           → File I/O, loading
+│   │   └── ml_utils/
+│   │       ├── feature_extractor.py → URL features
+│   │       ├── model/estimator.py   → Model wrapper
+│   │       └── metric/              → Evaluation metrics
+│   │
+│   ├── 📝 logging/                → Logging setup
+│   ├── ⚠️ exception/              → Custom exceptions
+│   └── ☁️ cloud/                  → Cloud deployment
+│
+├── 📊 DATA & ARTIFACTS
+│   ├── Network_Data/              → Raw dataset
+│   ├── Artifacts/                 → Pipeline outputs (timestamped)
+│   ├── final_model/               → Production models
+│   ├── data_schema/               → Validation schemas
+│   ├── logs/                      → Application logs
+│   ├── uploads/                   → User uploads
+│   └── prediction_output/         → Batch results
+│
+├── 🌐 WEB APPLICATION
+│   ├── templates/                 → HTML templates
+│   └── static/                    → CSS/JS files
+│
+└── ⚙️ CONFIGURATION
+    ├── setup.py                   → Package setup
+    ├── requirements.txt           → Dependencies
+    ├── Dockerfile                 → Container config
+    └── README.md                  → Documentation
+
+═══════════════════════════════════════════════════════════════════════════════
+                              WORKFLOW SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+TRAINING FLOW:
+  main.py → DataIngestion → DataValidation → DataTransformation → ModelTrainer
+           ↓                ↓                 ↓                    ↓
+        Artifacts/      Artifacts/        Artifacts/          final_model/
+
+PREDICTION FLOW:
+  app.py → Feature Extraction → Model Prediction → Web Display
+         ↓                     ↓                   ↓
+    templates/            final_model/         User Browser
+
+═══════════════════════════════════════════════════════════════════════════════
+                              KEY FILES TO READ
+═══════════════════════════════════════════════════════════════════════════════
+
+1. main.py                              → Understand training pipeline
+2. networksecurity/pipeline/training_pipeline.py → Complete pipeline logic
+3. networksecurity/components/*.py      → Individual components
+4. app.py                               → Web application
+5. networksecurity/utils/ml_utils/feature_extractor.py → Feature extraction
+
+═══════════════════════════════════════════════════════════════════════════════
+

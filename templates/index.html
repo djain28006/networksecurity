@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Security URL Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Safety Checker</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Enter URL here" value="{{ url }}" required>
+            <button type="submit">Check URL</button>
+        </form>
+
+        {% if result %}
+        <div class="result {{ status_class }}">
+            <h2>Prediction: {{ result }}</h2>
+            <p>URL: {{ url }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
