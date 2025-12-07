@@ -1,0 +1,33 @@
+# Python virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# ML pipeline artifacts and datasets
+Artifacts/
+final_model/
+Network_Data/
+data_schema/
+logs/
+uploads/
+prediction_output/
+notebooks/
+mlruns/
+mlflow/
+models/
+
+# Ignore large files
+*.pkl
+*.db
+*.log
+*.csv
+*.xlsx
+*.ipynb
+
+# Git
+.git/
+.gitignore
+.DS_Store
+
+# Allow requirements and code
+!requirements.txt
